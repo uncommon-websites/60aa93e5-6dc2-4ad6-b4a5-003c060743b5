@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
+
+	// Icons
+	import IconBrain from "~icons/lucide/brain";
+	import IconWorkflow from "~icons/lucide/workflow";
+	import IconShieldCheck from "~icons/lucide/shield-check";
+	import IconBlocks from "~icons/lucide/blocks";
+	import IconHeadset from "~icons/lucide/headset";
+	import IconLock from "~icons/lucide/lock";
 </script>
 
 <CustomerCardHero
@@ -53,62 +61,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Built for the complexity of legal work"
+	text="Harvey combines domain-specific AI models with agentic workflows to deliver expert-quality work product across contract review, due diligence, legal research, and document analysis. Unlike general-purpose AI tools, our platform is purpose-built for the precision and security requirements of the legal profession, with zero training on customer data and 24/7 white glove support. From elite law firms to Fortune 500 legal departments, we're accelerating how the world's leading legal professionals work."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Priya Mehta",
+			position: "Managing Partner",
+			company: "Global Corporate Law",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Harvey reduced our contract review time from 6 hours to 45 minutes per matter. Our team now handles 3x the volume without adding headcount, directly increasing our billable capacity by $2.3M annually.",
+			image: "/generated/image-editorial-style-environmental-portrait-o.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Thompson",
+			position: "General Counsel",
+			company: "Fortune 500 Technology",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The domain-specific accuracy eliminated our regulatory compliance risks. Harvey caught critical clauses our team missed in due diligence, preventing a potential $8M exposure on our last acquisition.",
+			image: "/generated/image-editorial-style-portrait-of-a-profession.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Jennifer Chen",
+			position: "Chief Legal Officer",
+			company: "International Financial Services",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We scaled our legal operations across 12 jurisdictions without proportional cost increases. Harvey's workflow automation delivered 60% cost savings while maintaining the expert-quality output our board demands.",
+			image: "/generated/image-editorial-style-environmental-portrait-o.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for legal excellence"
+	subtitle="Domain-specific AI trained exclusively for complex legal work, delivering expert-quality results that transform how you practice law."
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Domain-specific AI models",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Purpose-built models trained exclusively for legal work deliver expert-quality analysis that understands the nuances of law, not generic responses. Our multi-model architecture produces work product that matches the sophistication your clients expect.",
+			icon: IconBrain
 		},
 		{
-			title: "Data Analysis",
+			title: "Agentic workflows",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Automated workflows handle complex legal tasks from contract review to due diligence, dramatically reducing manual effort while maintaining precision. Transform hours of research into minutes without sacrificing quality or accuracy.",
+			icon: IconWorkflow
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Privacy-first architecture",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Zero training on customer data means your confidential information stays yours. Enterprise-grade security with industry-standard protection ensures compliance with the strictest legal and regulatory requirements.",
+			icon: IconLock
+		},
+		{
+			title: "Custom workflow builder",
+			description:
+				"Design and deploy custom workflows tailored to your firm's specific practice areas and processes. Adapt Harvey to match your unique way of working rather than forcing your team to change.",
+			icon: IconBlocks
+		},
+		{
+			title: "Seamless integrations",
+			description:
+				"Work where you already do with native Microsoft ecosystem integration across Word, Outlook, and SharePoint. Harvey fits into your existing tools rather than requiring you to learn new platforms.",
+			icon: IconBlocks
+		},
+		{
+			title: "White glove support",
+			description:
+				"24/7 dedicated customer support ensures your team maximizes value from day one. Our support team resolves issues immediately and helps you discover new ways to transform your practice.",
+			icon: IconHeadset
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Join the legal profession's transformation"
+	subtitle="50 of the AmLaw 100 are already ahead"
+	description="While your competitors accelerate with domain-specific AI, every day without Harvey means billable hours lost to manual work and strategic opportunities missed. Join 700+ leading law firms and enterprises who've already transformed their practice with professional-class AI built exclusively for legal work."
+	imageSrc="/generated/image-editorial-style-environmental-portrait-o.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Request demo",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn more",
+			variant: "secondary"
+		}
+	]}
+/>
