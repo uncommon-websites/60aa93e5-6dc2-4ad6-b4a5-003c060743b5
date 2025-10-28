@@ -6,16 +6,51 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	title="The AI platform for legal work"
+	subtitle="Harvey accelerates legal work through domain-trained AI models trusted by 50 of the top 100 law firms and 74,000+ lawyers worldwide."
+	centered={true}
+	customers={[
+		{
+			name: "Dr. Claudia Junker",
+			position: "General Counsel, Deutsche Telekom AG",
+			imageSrc: "/generated/image-editorial-style-environmental-portrait-o.webp"
+		},
+		{
+			name: "David Wakeling",
+			position: "Global Head of Markets Innovation, A&O Shearman",
+			imageSrc: "/generated/image-editorial-environmental-portrait-of-a-pr.webp"
+		},
+		{
+			name: "Sarah Mitchell",
+			position: "Managing Partner, Reed Smith",
+			imageSrc: "/generated/image-editorial-documentary-portrait-of-a-prof.webp"
+		},
+		{
+			name: "Jennifer Anderson",
+			position: "Partner, Allen & Overy",
+			imageSrc: "/generated/image-editorial-portrait-of-a-professional-fem.webp"
+		}
+	]}
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Request demo"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/pwc.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/telekom.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/allenovery.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/kkr.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
